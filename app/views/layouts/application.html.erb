@@ -6,9 +6,20 @@
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
-<body>
+<body id="store">
+	<div id="banner">
+		<%= image_tag("logo.png")%>
+		<%= @page_title || "Pragmatic Bookshelf" %>
+	</div>
 
-<%= yield %>
-
+	<div id="columns">
+		<div id="side">
+			<a href="index"> Home </a> <br />
+			<a href="index"> Questions </a> <br />
+		</div>
+		<div id="main">
+			<%= yield %>	
+		</div>
+	</div>	
 </body>
 </html>
