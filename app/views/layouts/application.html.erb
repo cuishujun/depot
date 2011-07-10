@@ -25,6 +25,14 @@
 			<a href="/products"> Products </a> <br />
 			<a href="/carts/2"> Carts </a> <br />
 			<a href="/store/index"> Store </a> <br />
+			
+			<% if session[:user_id] %>
+				<br />
+				<%= link_to 'Orders', orders_path %> <br />
+				<%= link_to 'Products', products_path %> <br />
+				<%= link_to 'Users', users_path %> <br />
+				<br />
+			<% end %>
 		</div>
 		<div id="main">
 			<%= yield %>	
