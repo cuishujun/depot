@@ -1,9 +1,9 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  name: Dave Thoma
+  name: vincent
   address: MyText
-  email: dave@example.org
+  email: shujuncui@gmail.com
   pay_type: Check
 
 two:
